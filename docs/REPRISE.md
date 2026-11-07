@@ -6,6 +6,8 @@
 
 ## Première séance
 
+La version Java 0.1.1 ajoute les couleurs des états, les options `--color auto|always|never` et porte la suite à 35 tests. Voir les [notes bilingues](releases/v0.1.1.md). Les vérifications réelles de machine restent dans `private/`, hors Git ; les images publiques utilisent uniquement les scénarios synthétiques.
+
 1. Lire le guide Java et ouvrir son POM dans IntelliJ avec JDK 21.
 2. Lancer `mvn verify`, puis le JAR suivant le guide.
 3. Examiner ensemble le diagnostic et le comparer avec l'interface Sécurité Windows.

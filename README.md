@@ -39,7 +39,7 @@ All project README files are maintained in **English and French**, with equivale
 
 ### Release previews
 
-See the [v0.1.0 release notes and three synthetic CLI previews](docs/releases/v0.1.0.md). The images show demonstration data, not the security state of a real PC or a graphical application.
+See the [v0.1.1 release notes and three synthetic CLI previews](docs/releases/v0.1.1.md). States use green (`ok`), yellow/amber (`warning`), cyan (`unknown`), and red (`error`, CLI/export failures). Labels remain visible without color. The images show demonstration data, not the security state of a real PC or a graphical application.
 
 ## Français
 
@@ -78,4 +78,4 @@ Tous les README du projet sont maintenus en **anglais et en français**, avec de
 
 ### Aperçus de la release
 
-Voir les [notes v0.1.0 et les trois aperçus CLI fictifs](docs/releases/v0.1.0.md). Les images montrent des données de démonstration, pas l'état de sécurité d'un vrai PC ni une interface graphique.
+Voir les [notes v0.1.1 et les trois aperçus CLI fictifs](docs/releases/v0.1.1.md). Les états utilisent le vert (`ok`), le jaune/orange (`warning`), le cyan (`unknown`) et le rouge (`error`, erreurs CLI/export). Les libellés restent visibles sans couleur. Les images montrent des données de démonstration, pas l'état de sécurité d'un vrai PC ni une interface graphique.

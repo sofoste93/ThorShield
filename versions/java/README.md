@@ -1,4 +1,4 @@
-# ThorShield — Java 0.1.0
+# ThorShield — Java 0.1.1
 
 [English](#english) | [Français](#français)
 
@@ -35,6 +35,15 @@ java -jar target\thorshield.jar --json reports\diagnostic.json
 Exit codes: **0** evaluated checks OK, **1** at least one item to review, **2** at least one unknown result (takes precedence over 1), **3** argument or export error. Even code 0 does not mean the PC is free of threats.
 
 ### Behavior and limitations
+
+State colors: **green** `ok`, **yellow/amber** `warning`, **cyan** `unknown`, **red** `error` (CLI/export failure, not a malware verdict). Labels remain visible, so color is never the only signal. Exact shades depend on the terminal theme; screenshots use the shared preview palette.
+
+Use `--color auto|always|never` with or without `--json`. Default `auto` enables ANSI colors only in a recognized interactive terminal. Redirected output stays plain, and a nonempty `NO_COLOR` disables automatic coloring. `always` explicitly forces ANSI even with `NO_COLOR`; `never` disables it. JSON never contains formatting codes.
+
+```powershell
+java -jar target\thorshield.jar --color always
+java -jar target\thorshield.jar --color never --json reports\diagnostic.json
+```
 
 - `ok`: only the checked indicators are active.
 - `warning`: a Defender protection is inactive in Normal mode, or a firewall profile is disabled.
@@ -86,6 +95,15 @@ java -jar target\thorshield.jar --json reports\diagnostic.json
 Codes de sortie : **0** contrôles évalués OK, **1** au moins un point à vérifier, **2** au moins une information inconnue (prioritaire sur 1), **3** erreur d'arguments ou d'export. Même un code 0 ne signifie pas que le PC est exempt de menace.
 
 ### Comportement et limites
+
+Couleurs des états : **vert** `ok`, **jaune/orange** `warning`, **cyan** `unknown`, **rouge** `error` (erreur CLI/export, pas un verdict de logiciel malveillant). Les libellés restent visibles : la couleur n'est jamais le seul signal. La teinte dépend du thème du terminal ; les captures utilisent la palette commune des aperçus.
+
+Utiliser `--color auto|always|never`, avec ou sans `--json`. Par défaut, `auto` active les couleurs ANSI seulement dans un terminal interactif reconnu. La sortie redirigée reste sans couleur, et une variable `NO_COLOR` non vide désactive la coloration automatique. `always` force explicitement ANSI, même avec `NO_COLOR` ; `never` le désactive. Le JSON ne contient jamais de codes de mise en forme.
+
+```powershell
+java -jar target\thorshield.jar --color always
+java -jar target\thorshield.jar --color never --json reports\diagnostic.json
+```
 
 - `ok` : seuls les indicateurs vérifiés sont actifs.
 - `warning` : protection Defender inactive en mode Normal ou profil de pare-feu désactivé.
