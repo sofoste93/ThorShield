@@ -1,0 +1,36 @@
+# Données locales et secrets
+private/
+*.local.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+.env
+.env.*
+!.env.example
+reports/
+logs/
+baselines/
+*.log
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Java et Rust
+target/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+out/
+
+# Exports et diagnostics hors dossiers dédiés
+diagnostic*.json
+hs_err_pid*
+*.hprof

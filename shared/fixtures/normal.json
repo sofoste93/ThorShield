@@ -1,0 +1,6 @@
+{
+  "defender": {"status":"success","value":{"antivirus_enabled":true,"realtime_enabled":true,"running_mode":"Normal"}},
+  "firewall": {"status":"success","value":{"Domain":true,"Private":true,"Public":true}},
+  "expected_severities": ["ok","ok","ok","ok"],
+  "expected_exit_code": 0
+}
